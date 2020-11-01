@@ -1,0 +1,9 @@
+<p [ngSwitch]="submissionType">Submission selection:
+  <span *ngSwitchCase="0">MCD</span>
+  <span *ngSwitchCase="1">PHARMACY</span>
+  <span *ngSwitchCase="2">PROVIDER</span>
+  <span *ngSwitchCase="3">OTHER HEATH INSURANCE</span>
+</p>
+<app-tabulator-table [columnNames]="submissionDetails.headers"
+  [tableData]="submissionDetails.data">
+</app-tabulator-table>
